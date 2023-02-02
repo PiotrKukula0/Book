@@ -16,13 +16,13 @@ import "./style.css"
 function App() {
   return (
     <div className="App">
-    <BrowserRouter>
+      <BrowserRouter>
         <Routes>
-          <Route path="/" element ={<Books/>}/>
-          <Route path="/add" element={<Add />}/>
-          <Route path="/update" element={<Update/>}/>
+          <Route path="/" element={<Books />} />
+          <Route path="/add" element={<Add />} />
+          <Route path="/update/:id" element={<Update />} />
         </Routes>
-    </BrowserRouter>
+      </BrowserRouter>
     </div>
   );
 }
